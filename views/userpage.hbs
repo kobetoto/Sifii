@@ -1,0 +1,26 @@
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Siʃii</a></li>
+                    <li><a href="/explore">Explore</a></li>
+                    <li><a href="/learn">Learn</a></li>
+                    <li><a href="/build">Build</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <h1>Profil</h1>
+
+        {{#if name}}
+            <h2>hello {{name}}</h2>
+        {{else}}
+            <h2>No user</h2>
+        {{/if}}
+    <ul>
+        {{#each cities}}
+        <li>{{@index}}Hello {{this}}</li>
+        {{/each}}
+    </ul>
+        <p><a href='/'>home</a></p>
+        <img src=""/>
+
