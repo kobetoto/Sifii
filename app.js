@@ -1,33 +1,26 @@
+//serveur web
 const express = require("express");
+const app = express();
 
-const app = express(); //serveur web
+//connect to the database
+require("./db");
 
-app.set("view engine", "hbs"); //hbs
+//configure express pour utiliser body-parse
+const bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(express.static("public")); //exp.static
+//hbs
+app.set("view engine", "hbs");
 
-app.get("/", function (req, res, next) {
-  res.render("homepage");
-});
+//exp.static
+app.use(express.static("public"));
 
-app.get("/user", function (req, res, next) {
-  res.render("userpage", {
-    name: "John",
-    cities: ["Paris", "Madrid", "Berlin", "LosAngeles"],
-  });
-});
+const indexRoutes = require("./routes/index.routes.js");
+const authRoutes = require("./routes/auth.routes.js");
 
-app.get("/explore", function (req, res, next) {
-  res.render("explore");
-});
-
-app.get("/learn", function (req, res, next) {
-  res.render("learn");
-});
-
-app.get("/build", function (req, res, next) {
-  res.render("build");
-});
+//"monter le router"
+app.use("/", indexRoutes);
+app.use("/", authRoutes);
 
 app.listen(3000, function () {
   console.log("HELLO WORLD ;) ");

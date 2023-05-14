@@ -2,17 +2,54 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="/">Siʃii</a></li>
+                    <li><a href="/">Siƒii</a></li>
                     <li><a href="/explore">Explore</a></li>
                     <li><a href="/learn">Learn</a></li>
                     <li><a href="/build">Build</a></li>
+                    <li><a href="/login">LogIn</a></li>
                 </ul>
             </nav>
         </header>
+        <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500"
+    },
+    {
+      "proName": "FOREXCOM:NSXUSD",
+      "title": "US 100"
+    },
+    {
+      "proName": "FX_IDC:EURUSD",
+      "title": "EUR/USD"
+    },
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "Bitcoin"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "Ethereum"
+    }
+  ],
+  "showSymbolLogo": true,
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
 
         <div id="accroche">
             <div class="titre">
-                <h1>The Simply ʃinance.</h1>
+                <h1>The Simply ƒinance.</h1>
 
                 <p>Unlock your financial potential: Explore, learn, and travel in tradfi with our user-friendly finance platform designed for everyone</p>
             </div>
@@ -27,21 +64,25 @@
                 </p>
                         
                     <div id="container">
+                        <a href="/explore">
                         <button class="learn-more">
                             <span class="circle" aria-hidden="true">
                                 <span class="icon arrow"></span>
                             </span>
                                 <span class="button-text">explore</span>
                         </button>
+                        </a>
                     </div>      
                    
                     <div id="container">
+                        <a href="/signup">
                         <button class="learn-more">
                             <span class="circle" aria-hidden="true">
                                 <span class="icon arrow"></span>
                             </span>
-                                <span class="button-text">signi in</span>
+                                <span class="button-text">∫igni Up</span>
                         </button>
+                        </a>
                     </div>      
             
             </div>
@@ -57,12 +98,14 @@
                 </p>
                     
                     <div id="container">
+                        <a href="/learn">
                         <button class="learn-more">
                             <span class="circle" aria-hidden="true">
                                 <span class="icon arrow"></span>
                             </span>
                                 <span class="button-text">learn</span>
                         </button>
+                        </a>
                     </div>      
             
             </div>
@@ -73,7 +116,7 @@
                 <h2>Build your financial strategy</h2>
 
                 <p>
-                    The si∫ii project is the foundation of the new era of economy. Join a fast-growing team and built your futur secure and stable financial foundation.
+                    The Siƒii project is the foundation of the new era of economy. Join a fast-growing team and built your futur secure and stable financial foundation.
                 </p>
 
                 <h3>Financial Crisis Survival Kit</h3>
@@ -93,12 +136,14 @@
                 </p>
                             
                     <div id="container">
+                        <a href="/build">
                         <button class="learn-more">
                             <span class="circle" aria-hidden="true">
                                 <span class="icon arrow"></span>
                             </span>
                                 <span class="button-text">build</span>
                         </button>
+                        </a>
                     </div>                 
             </div>
         </section>
