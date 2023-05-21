@@ -5,7 +5,7 @@ const app = express();
 //express-session (cookies)
 const session = require("express-session");
 
-// since we are going to USE this middleware in the app.js,
+// COOKIES since we are going to USE this middleware in the app.js,
 // let's export it and have it receive a parameter
 module.exports = (app) => {
   // <== app is just a placeholder here

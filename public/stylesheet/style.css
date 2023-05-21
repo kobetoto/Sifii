@@ -72,6 +72,11 @@ section{
     margin-bottom: 1rem;
 }
 
+h1{
+    padding: 3rem;
+    text-align: center;
+}
+
 h2{
     text-align: left;
 }
@@ -83,13 +88,14 @@ h3{
 
 p{
   text-align: left;
-
 }
 
 .titre p {
     font-size: 1.2rem;
     line-height: 1.8;
 }
+
+
 
 footer {
     background-color: #080808;
@@ -123,3 +129,4 @@ a{
 .tradingview-widget-container{
     position: fixed;
 }
+

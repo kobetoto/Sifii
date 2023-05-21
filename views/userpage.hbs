@@ -1,43 +1,31 @@
-            <head>
-        <link rel="stylesheet" href="/stylesheet/userPage.css">
-    </head>
-        
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="/">Siƒii</a></li>
-                    <li><a href="/explore">Explore</a></li>
-                    <li><a href="/learn">Learn</a></li>
-                    <li><a href="/build">Build</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <link rel="stylesheet" href="/stylesheet/userPage.css">
+</head>
 
-    <h1>Profil</h1>
+<h1>Profil</h1>
 
-        {{#if userName}}
-            <h2>hello {{userName}}</h2>
-        {{else}}
-            <h2>No user</h2>
-        {{/if}}
-    <ul>
-        {{#each capital}}
-        <li>{{this}}</li>
-        {{/each}}
-    </ul>
-        <p><a href='/'>home</a></p>
-        <p><a href='/user/{{_id}}/edit'>edit profil</a></p>
+{{#if userName}}
+<h2>hello {{userName}}</h2>
+{{else}}
+<h2>No user</h2>
+{{/if}}
+<ul>
+    {{#each capital}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+<p><a href='/'>home</a></p>
+<p><a href='/user/{{_id}}/edit'>edit profil</a></p>
 
 
 <div class="pl">
-	<div class="pl__outer-ring"></div>
-	<div class="pl__inner-ring"></div>
-	<div class="pl__track-cover"></div>
-	<div class="pl__ball">
-		<div class="pl__ball-texture"></div>
-		<div class="pl__ball-outer-shadow"></div>
-		<div class="pl__ball-inner-shadow"></div>
-		<div class="pl__ball-side-shadows"></div>
-	</div>
+    <div class="pl__outer-ring"></div>
+    <div class="pl__inner-ring"></div>
+    <div class="pl__track-cover"></div>
+    <div class="pl__ball">
+        <div class="pl__ball-texture"></div>
+        <div class="pl__ball-outer-shadow"></div>
+        <div class="pl__ball-inner-shadow"></div>
+        <div class="pl__ball-side-shadows"></div>
+    </div>
 </div>
-

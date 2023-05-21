@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+}
+
+h1{
+    font-weight: 700;
+}
+#intro{
+    margin-bottom: 100px;
+    padding: 50px;
+}
+#main{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+
+
+h2{
+    font-weight: 800;
+    padding-left: 45px;
+}
+
+#description1{
+    padding: 50px;
+    margin: 44px;
+    margin-bottom: 400px;
+    width: 800px;
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.437);
+    border-radius: 10px;    
+}
+
+#description2{
+    padding: 50px;
+    margin: 44px;
+    margin-bottom: 400px;
+    width: 800px;
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.437);
+    border-radius: 10px;
+}
+
+#description3{
+    padding: 50px;
+    margin: 44px;
+    margin-bottom: 400px;
+    width: 800px;
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.437);
+    border-radius: 10px;
+    
+}
+
+.tradingview-widget-container-explore{
+
+    border: solid 10px black;
+    border-radius: 10px;
+    margin-bottom: 300px;
+}
+
+

@@ -1,61 +1,239 @@
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="/">Siƒii</a></li>
-                    <li><a href="/learn">Learn</a></li>
-                    <li><a href="/build">Build</a></li>
-                </ul>
-            </nav>
-        </header>
-<h1>Explore</h1>
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets</span></a> on TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
-  {
-  "symbols": [
-    [
-      "NASDAQ:NDX|1D"
-    ],
-    [
-      "BLACKBULL:SPX500|1D"
-    ],
-    [
-      "SPREADEX:CAC|1D"
-    ],
-    [
-      "XETR:DAX|1D"
-    ],
-    [
-      "SPREADEX:NIKKEI|1D"
-    ]
-  ],
-  "chartOnly": false,
-  "width": 1000,
-  "height": 500,
-  "locale": "en",
-  "colorTheme": "dark",
-  "autosize": false,
-  "showVolume": false,
-  "showMA": false,
-  "hideDateRanges": false,
-  "hideMarketStatus": false,
-  "hideSymbolLogo": false,
-  "scalePosition": "right",
-  "scaleMode": "Normal",
-  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
-  "fontSize": "10",
-  "noTimeScale": false,
-  "valuesTracking": "1",
-  "changeMode": "price-and-percent",
-  "chartType": "area",
-  "maLineColor": "#2962FF",
-  "maLineWidth": 1,
-  "maLength": 9,
-  "lineWidth": 2,
-  "lineType": 0
-}
-  </script>
+<head>
+  <link rel="stylesheet" href="/stylesheet/explore.css" />
+
+  <title>Siʃii: Explore galaxy</title>
+</head>
+
+<h1>Explore all the galaxy</h1>
+
+<span id="intro">The financial markets are akin to a vast galaxy, teeming with countless stars representing diverse
+  assets. Each asset
+  - akin to a star - has its own unique properties, brightness representing its value, and gravitational pull echoing
+  its market influence. The markets, much like clusters in a galaxy, are interconnected, forming a complex web of
+  influences and reactions. Traders navigate through this cosmic system, their compasses directed by the celestial
+  movements of prices and trends. As unpredictable as the birth of a star, these markets can surge with activity,
+  illuminating investment opportunities, or recede into a quiet nebula of low volatility. Much like astronomers
+  observing the universe, astute investors study these patterns, seeking to understand, predict, and profit from their
+  movements.</span>
+
+
+<div id="main">
+  <div id="colone1">
+    <h2>Indices </h2>
+    <div id="description1">
+      <p>
+        Stock Indices are helpful to understand a market's overall direction and as a barometer of the underlying
+        economy.
+        They're made up of a basket of securities, derivatives, or other financial instruments – usually spanning major
+        industries – that are used to reflect the status of a specific market or asset class, and different indices are
+        weighted independently and cover a variety of geographies. Basically, there's more variety in global indices
+        than
+        on
+        the Cheesecake Factory menu. Use them to understand where the markets are headed and inform your trading
+        strategy.
+        This page will show you ideas, news, and price action for various market indices.
+      </p>
+
+    </div>
+
+    <h2>Currencies and forex </h2>
+    <div id="description2">
+      <p>
+        The Foreign Exchange (or Forex) market is where global currencies are traded. It's a decentralized global market
+        that operates 24 hours a day, and is considered the largest by trading volume and the most liquid worldwide.
+        Currencies are traded in pairs, so by exchanging one currency for another, traders speculate on whether one
+        currency
+        will rise or fall in value against the other. The market has changed a lot since the internet revolution –
+        though
+        what hasn't? – now available to retail traders with the click of a mouse through online brokerages. This page
+        will
+        show you ideas, financials, news, and more for the Forex market.
+      </p>
+    </div>
+
+
+    <h2>Crypto-Currencies </h2>
+    <div id="description3">
+      <p>
+        A cryptocurrency is a fully decentralized, secure, digital currency whose creation is controlled by cryptography
+        – and the industry is almost as popular as a high school quarterback these days. They're not issued or regulated
+        by a central bank, and their prices are purely based on supply and demand. Of course, Bitcoin was the OG crypto,
+        launched in 2009, but there have been a multitude of currencies released since then and the market's overall
+        value is now around the $1tn mark. This page will show you ideas, financials, news, and more for the
+        cryptocurrency market.
+
+      </p>
+    </div>
+  </div>
+
+  <div id="colone2">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container-explore">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js"
+        async>
+          {
+            "symbols": [
+              [
+                "BLACKBULL:SPX500|1M"
+              ],
+              [
+                "NASDAQ:NDX|1M"
+              ],
+              [
+                "SPREADEX:CAC|1M"
+              ],
+              [
+                "XETR:DAX|1M"
+              ],
+              [
+                "SPREADEX:NIKKEI|1M"
+              ]
+            ],
+              "chartOnly": false,
+                "width": 900,
+                  "height": 450,
+                    "locale": "en",
+                      "colorTheme": "dark",
+                        "autosize": false,
+                          "showVolume": false,
+                            "showMA": false,
+                              "hideDateRanges": false,
+                                "hideMarketStatus": false,
+                                  "hideSymbolLogo": false,
+                                    "scalePosition": "right",
+                                      "scaleMode": "Normal",
+                                        "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                          "fontSize": "10",
+                                            "noTimeScale": false,
+                                              "valuesTracking": "1",
+                                                "changeMode": "price-and-percent",
+                                                  "chartType": "area",
+                                                    "maLineColor": "#2962FF",
+                                                      "maLineWidth": 1,
+                                                        "maLength": 9,
+                                                          "lineWidth": 2,
+                                                            "lineType": 0
+          }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container-explore">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js"
+        async>
+          {
+            "symbols": [
+              [
+                "FX:EURUSD|1M"
+              ],
+              [
+                "FX:USDCHF|1D"
+              ],
+              [
+                "FX:USDJPY|1D"
+              ],
+              [
+                "FX:EURJPY|1D"
+              ],
+              [
+                "FX_IDC:CNYUSD|1D"
+              ]
+            ],
+              "chartOnly": false,
+                "width": 900,
+                  "height": 450,
+                    "locale": "en",
+                      "colorTheme": "dark",
+                        "autosize": false,
+                          "showVolume": false,
+                            "showMA": false,
+                              "hideDateRanges": false,
+                                "hideMarketStatus": false,
+                                  "hideSymbolLogo": false,
+                                    "scalePosition": "right",
+                                      "scaleMode": "Normal",
+                                        "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                          "fontSize": "10",
+                                            "noTimeScale": false,
+                                              "valuesTracking": "1",
+                                                "changeMode": "price-and-percent",
+                                                  "chartType": "area",
+                                                    "maLineColor": "#2962FF",
+                                                      "maLineWidth": 1,
+                                                        "maLength": 9,
+                                                          "lineWidth": 2,
+                                                            "lineType": 0,
+                                                              "dateRanges": [
+                                                                "1d|1",
+                                                                "1m|30",
+                                                                "3m|60",
+                                                                "12m|1D",
+                                                                "60m|1W",
+                                                                "all|1M"
+                                                              ]
+          }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container-explore">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js"
+        async>
+          {
+            "symbols": [
+              [
+                "CRYPTO:BTCUSD|1M"
+              ],
+              [
+                "COINBASE:ETHUSD|1M"
+              ],
+              [
+                "CRYPTO:BNBUSD|1M"
+              ],
+              [
+                "CRYPTO:ATOMUSD|1M"
+              ]
+            ],
+              "chartOnly": false,
+                "width": 900,
+                  "height": 450,
+                    "locale": "en",
+                      "colorTheme": "dark",
+                        "autosize": false,
+                          "showVolume": false,
+                            "showMA": false,
+                              "hideDateRanges": false,
+                                "hideMarketStatus": false,
+                                  "hideSymbolLogo": false,
+                                    "scalePosition": "right",
+                                      "scaleMode": "Normal",
+                                        "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                          "fontSize": "10",
+                                            "noTimeScale": false,
+                                              "valuesTracking": "1",
+                                                "changeMode": "price-and-percent",
+                                                  "chartType": "area",
+                                                    "maLineColor": "#2962FF",
+                                                      "maLineWidth": 1,
+                                                        "maLength": 9,
+                                                          "lineWidth": 2,
+                                                            "lineType": 0,
+                                                              "dateRanges": [
+                                                                "1d|1",
+                                                                "1m|30",
+                                                                "3m|60",
+                                                                "12m|1D",
+                                                                "60m|1W",
+                                                                "all|1M"
+                                                              ]
+          }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </div>
+
+
 </div>
-<!-- TradingView Widget END -->
