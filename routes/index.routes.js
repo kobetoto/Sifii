@@ -15,11 +15,15 @@ router.get("/", function (req, res, next) {
 
 //GET user page
 router.get("/user", function (req, res, next) {
-  res.render("userPage", {
-    userName: req.query.userName,
-    capital: ["$USD", "€EUR", "￥YEN", "฿BTC", "♢ETH"],
-  }),
-    { layout: false };
+  if (req.session.currentUser) {
+    res.render("userPage", {
+      userName: req.query.userName, //...|| req.session.currentUser.userName
+      capital: ["$USD", "€EUR", "￥YEN", "฿BTC", "♢ETH"],
+    }),
+      { layout: false };
+  } else {
+    res.redirect("/login");
+  }
 });
 router.post("/user", function (req, res, next) {
   console.log("corps de la req .POST (userpage)==", req.body);
