@@ -1,6 +1,9 @@
 const mongoose = require("mongoose");
 
 const walletSchema = new mongoose.Schema({
+  capital: Number,
+  trad: Number,
+  digital: Number,
   USD: Number,
   EUR: Number,
   YEN: Number,

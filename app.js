@@ -2,6 +2,7 @@
 const express = require("express");
 const app = express();
 
+//cookies
 require("./session.config")(app);
 
 //connect to the database

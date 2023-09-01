@@ -1,10 +1,19 @@
 <head>
     <link rel="stylesheet" href="/stylesheet/userPage.css">
+    <link rel="stylesheet" href="/stylesheet/animBall.css">
 </head>
 
 <h1>Profil</h1>
+<div class="user">
+    {{#if userName}}
+    <h1>hello {{userName}}</h1>
+    {{else}}
+    <h1>No user</h1>
+    {{/if}}
+</div>
 
-{{#if userName}}
+
+<!--{{#if userName}}
 <h2>hello {{userName}}</h2>
 {{else}}
 <h2>No user</h2>
@@ -15,7 +24,106 @@
     {{/each}}
 </ul>
 <p><a href='/'>home</a></p>
-<p><a href='/user/{{_id}}/edit'>edit profil</a></p>
+<p><a href='/user/{{_id}}/edit'>edit profil</a></p>-->
+
+<!--wallet-->
+<div class="container">
+    <div class="iphone">
+        <div class="header">
+            <div class="header-summary">
+                <div class="summary-text">
+                    My Balance
+                </div>
+                <div class="summary-balance">
+                    $ 293.00
+                </div>
+            </div>
+            <div class="user-profile">
+                <img src="https://w7.pngwing.com/pngs/321/630/png-transparent-astronaut-computer-icons-space-suit-outer-space-astronaut-logo-outer-space-desktop-wallpaper-thumbnail.png"
+                    class="user-photo">
+            </div>
+        </div>
+        <div class="content">
+            <div class="card">
+                <div class="upper-row">
+                    <div class="card-item">
+                        <span>Active Balance</span>
+                        <span>1804 <span class="dollar">$</span>
+                    </div>
+                    <div class="card-item">
+                        <span>My Save it</span>
+                        <span>2000 <span class="dollar">$</span>
+                    </div>
+                </div>
+            </div>
+            <div class="transactions"><span class="t-desc">capital distribution </span>
+                <div class="transaction">
+                    <div class="t-icon-container"><img
+                            src="https://static.vecteezy.com/system/resources/previews/004/362/246/original/dollar-flat-design-long-shadow-icon-us-dollar-currency-sign-silhouette-symbol-vector.jpg"
+                            class="t-icon"></div>
+                    <div class="t-details">
+                        <div class="t-title">Dollars</div>
+                    </div>
+                    <div class="t-amount">+&nbsp;750$
+                    </div>
+                </div>
+
+                <div class="transaction">
+                    <div class="t-icon-container"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9XD-qGrZZSIbnTmWAXqhxIsZNMFOA2iQ41g&usqp=CAU"
+                            class="t-icon"></div>
+                    <div class="t-details">
+                        <div class="t-title">Euros</div>
+                        <div class="t-time">
+                        </div>
+                    </div>
+                    <div class="t-amount">+&nbsp;200$
+                    </div>
+                </div>
+
+                <div class="transaction">
+                    <div class="t-icon-container"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/2048px-Bitcoin.svg.png"
+                            class="t-icon"></div>
+                    <div class="t-details">
+                        <div class="t-title">Btc</div>
+                        <div class="t-time">
+                        </div>
+                    </div>
+                    <div class="t-amount red">-&nbsp;120$
+                    </div>
+                </div>
+
+                <div class="transaction">
+                    <div class="t-icon-container"><img
+                            src="https://cdn.pixabay.com/photo/2021/05/24/09/15/ethereum-logo-6278328_640.png"
+                            class="t-icon">
+                    </div>
+                    <div class="t-details">
+                        <div class="t-title">Eth</div>
+                        <div class="t-time">
+                        </div>
+                    </div>
+                    <div class="t-amount red">-&nbsp;120$
+                    </div>
+                </div>
+
+                <div class="transaction">
+                    <div class="t-icon-container"><img
+                            src="https://s3-symbol-logo.tradingview.com/indices/s-and-p-500--600.png" class="t-icon">
+                    </div>
+                    <div class="t-details">
+                        <div class="t-title">Sp500</div>
+                        <div class="t-time">
+                        </div>
+                    </div>
+                    <div class="t-amount red">-&nbsp;120$
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--ball anim-->
 <div class="pl">

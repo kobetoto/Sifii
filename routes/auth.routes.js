@@ -17,7 +17,8 @@ router.get("/login", function (req, res, next) {
 });
 //(traitement du formulaire)
 router.post("/login", function (req, res, next) {
-  //console.log("req.body de la route POST du login ==", req.body);
+  console.log("req.session c'est ==", req.session);
+
   User.findOne({ email: req.body.email })
     .then(function (userFromDB) {
       if (userFromDB) {
@@ -25,7 +26,6 @@ router.post("/login", function (req, res, next) {
           bcrypt.compareSync(req.body.passwordHash, userFromDB.passwordHash)
         ) {
           req.session.currentUser = userFromDB;
-
           res.render("userPage", {
             userName: req.body.userName,
             capital: ["$USD", "€EUR", "￥YEN", "฿BTC", "♢ETH"],
@@ -47,7 +47,6 @@ router.get("/signup", function (req, res, next) {
 });
 router.post("/signup", function (req, res, next) {
   //console.log("req.body requete signup .POST===", req.body);
-
   const passwordhash = bcrypt.hashSync(req.body.passwordHash, salt);
 
   new User({
@@ -57,6 +56,7 @@ router.post("/signup", function (req, res, next) {
   })
     .save()
     .then(function (newUserFromDB) {
+      req.session.currentUser = newUserFromDB;
       res.render("userPage", {
         userName: req.body.userName,
         capital: ["$USD", "€EUR", "￥YEN", "฿BTC", "♢ETH"],

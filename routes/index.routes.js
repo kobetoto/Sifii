@@ -17,7 +17,7 @@ router.get("/", function (req, res, next) {
 router.get("/user", function (req, res, next) {
   if (req.session.currentUser) {
     res.render("userPage", {
-      userName: req.query.userName, //...|| req.session.currentUser.userName
+      userName: req.session.currentUser.userName, //...|| req.session.currentUser.userName
       capital: ["$USD", "€EUR", "￥YEN", "฿BTC", "♢ETH"],
     }),
       { layout: false };
@@ -25,6 +25,7 @@ router.get("/user", function (req, res, next) {
     res.redirect("/login");
   }
 });
+
 router.post("/user", function (req, res, next) {
   console.log("corps de la req .POST (userpage)==", req.body);
   res.render("userPage", {

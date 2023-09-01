@@ -6,10 +6,10 @@
   body::after {
     content: "";
     position: absolute;
-    top: 946vmin;
-    left: 29vmin;
-    width: 62vmin;
-    height: 62vmin; 
+    top: 46vmin;
+    left: 9vmin;
+    width: 32vmin;
+    height: 32vmin; 
     display: block;
     width: .2vmin;
     height: .2vmin;
@@ -131,11 +131,14 @@
   
    #anim{
     margin: 0;
-    height: 12vmin;
-    width: 120vmin;
+    height: 3vmin;
+    width: 30vmin;
     display: flex;
     justify-content: center;
-    position: relative;
+    position: absolute;
+    top: 1000px;
+    left: 9vmin;
+    color: rgb(235, 229, 255);
   }
   
 
@@ -154,6 +157,7 @@
     -webkit-animation: planet-rotate 4s linear infinite;
     animation: planet-rotate 4s linear infinite;
     position: relative;
+    color: rgb(255, 255, 255);
   }
   
   em.planet::before {
@@ -168,8 +172,8 @@
   }
   
   em.planet.left {
-    -webkit-transform-origin: 40vmin 5vmin;
-    transform-origin: 40vmin 5vmin;
+    -webkit-transform-origin: 20vmin 5vmin;
+    transform-origin: 20vmin 5vmin;
   }
   
   em.planet.right {
